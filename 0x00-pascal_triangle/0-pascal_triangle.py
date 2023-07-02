@@ -6,6 +6,8 @@ of the pascal triangle function
 
 
 def pascal_triangle(n):
+    """pascal triangle function
+    """
     if n <= 0:
         return []
 
@@ -15,6 +17,9 @@ def pascal_triangle(n):
 
 
 def derive_next_row(previous_row):
+    """derives the next row in the pascal triangle
+    sequence given the previous row
+    """
     if (previous_row is None):
         return [1]
 
@@ -35,6 +40,10 @@ def derive_next_row(previous_row):
 
 
 def get_item(array, idx):
+    """gets an item in an array
+    without throwing an exception if
+    the index is out of bounds
+    """
     try:
         return array[idx]
     except IndexError:
