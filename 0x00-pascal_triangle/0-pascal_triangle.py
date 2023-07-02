@@ -1,3 +1,10 @@
+#!/usr/bin/python3
+
+""" This module contains a python implementation
+of the pascal triangle function
+"""
+
+
 def pascal_triangle(n):
     if n <= 0:
         return []
