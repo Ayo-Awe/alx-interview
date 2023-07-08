@@ -29,7 +29,8 @@ def canUnlockAll(boxes):
             # skip key
             continue
 
-        # optimise by checking if all boxes have been unlocked but queue is not empty
+        # optimise by checking if all boxes have been unlocked
+        # but queue is not empty
         if (set(visited_boxes) == set(available_boxes)):
             return True
 
