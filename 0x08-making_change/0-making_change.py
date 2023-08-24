@@ -19,7 +19,7 @@ def makeChange(coins: List[int], total: int) -> int:
     min = sorted_coins[-1]
 
     if (min > total):
-        return 0
+        return -1
 
     total_coins = 0
     remainder = total
